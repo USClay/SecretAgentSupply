@@ -4,19 +4,12 @@
 
 
 
-@media only screen and (max-width: 1024px) {
- .mobile-nav {
-   display: block;
-   text-align: center;
- }
- .mobile-nav li {
-   padding-top: 0.75rem;
-   padding-bottom: 0.75rem;
- }
- .nav-items li {
-   display: none;
- }
-}
+
+
+
+
+
+
 
 
 
@@ -120,7 +113,9 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: 3rem 0px 0px 0px;
+  width: 100%;
 }
+
 
 .product {
   width: 30%;
@@ -149,5 +144,110 @@ nav {
 
 .product-image img {
   display: block;
-  max-width: 8rem;
+  max-width: 8em;
+}
+
+.location,
+.hours {
+  width: 35%;
+  display: block;
+}
+
+.location h3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: black;
+  padding-left: 2rem;
+}
+
+.location p {
+  color: #34282c;
+  line-height: 1.4em;
+}
+
+footer {
+  height: 7rem;
+  background-color: black;
+  margin-top: 4rem;
+}
+
+.copyright-container {
+  max-width: 960px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+}
+
+.copyright-container h3 {
+  padding-top: 3em;
+}
+
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 15rem;
+  }
+  .main-CTA {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    top: 10rem;
+  }
+  .main-CTA h2 {
+    font-size: 0.77rem;
+  }
+  .main-CTA h1 {
+    font-size: 1rem;
+  }
+  .product-grid.loc-hours {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .location {
+    width: 100%;
+  }
+  .location h3 {
+    text-align: center;
+  }
+  .location p {
+    text-align: center;
+  }
+  .copyright-container h3 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1024px) {
+ .mobile-nav {
+   display: block;
+   text-align: center;
+ }
+ .mobile-nav li {
+   padding-top: 0.75rem;
+   padding-bottom: 0.75rem;
+ }
+ .nav-items li {
+   display: none;
+ }
+
+ }
+
+@media only screen and (max-width: 1024px) {
+  .product.glasses {
+    display: none;
+  }
+}
+
+
+ @media only screen and (max-width: 1024px) {
+   .product.pen,
+   .product.watch {
+     width: 47%;
+   }
+ }
+
+ @media screen and (max-width: 470px) {
+   .product.watch {
+     display: none;
+   }
+   .product.pen {
+     width: 90%;
+   }
 }
